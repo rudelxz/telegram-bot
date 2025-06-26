@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: forum-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python forum_bot_lite.py
+    envVars:
+      - key: TOKEN
+        value: 8083948825:AAEHfN8gDLg5qXorv-aq3zPQ2fUINXaTd5o
+    pythonVersion: 3.10.13
